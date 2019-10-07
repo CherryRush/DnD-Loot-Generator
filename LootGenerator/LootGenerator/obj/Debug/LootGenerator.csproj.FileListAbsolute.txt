@@ -1,0 +1,10 @@
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\bin\Debug\LootGenerator.exe.config
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\bin\Debug\LootGenerator.exe
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\bin\Debug\LootGenerator.pdb
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.Form1.resources
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.Properties.Resources.resources
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.csproj.GenerateResource.Cache
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.exe
+C:\Users\Chase\source\repos\LootGenerator\LootGenerator\obj\Debug\LootGenerator.pdb
