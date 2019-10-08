@@ -11,21 +11,38 @@ namespace LootGenerator
     {
         // Attributes
 
-        private string name;  // The name of the item.
+        public string name { private set; get; }  // The name of the item.
         private int value;  // The value of the item in gp.
         private string type;  // Whether the item is a gemstone or art object.
 
         // Methods
 
-        public string Getname()
+        public string GetName()  // Return the name of the valuable item.
         {
             return name;
         }
-        
-        public string Inspect()
+
+        public bool CheckName(string check)  // Check to see if the name of the item is the same as a test string.
         {
-            string output = name + "\n\n\tA " + type + " worth " + String.Format("{0:n}", value) + " gold pieces.";
+            if (check == name)
+                return true;
+            else
+                return false;
+        }
+
+        public string Inspect()  // Output the item's description for txtInspect.
+        {
+            string output = name + "\r\n \r\nA " + type + " worth " + String.Format("{0:n}", value) + " gold pieces.";
             return output;
+        }
+
+        // Constructor
+
+        public Valuable(string name, string type, int value)
+        {
+            this.name = name;
+            this.value = value;
+            this.type = type;
         }
     }
 }

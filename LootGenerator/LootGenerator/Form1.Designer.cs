@@ -326,7 +326,7 @@
             // 
             // txtInspect
             // 
-            this.txtInspect.Location = new System.Drawing.Point(503, 181);
+            this.txtInspect.Location = new System.Drawing.Point(527, 181);
             this.txtInspect.Multiline = true;
             this.txtInspect.Name = "txtInspect";
             this.txtInspect.ReadOnly = true;
@@ -362,8 +362,10 @@
             this.lstTreasure.FormattingEnabled = true;
             this.lstTreasure.Location = new System.Drawing.Point(196, 31);
             this.lstTreasure.Name = "lstTreasure";
-            this.lstTreasure.Size = new System.Drawing.Size(300, 472);
+            this.lstTreasure.ScrollAlwaysVisible = true;
+            this.lstTreasure.Size = new System.Drawing.Size(325, 472);
             this.lstTreasure.TabIndex = 5;
+            this.lstTreasure.SelectedIndexChanged += new System.EventHandler(this.lstTreasure_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -379,7 +381,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(579, 163);
+            this.label4.Location = new System.Drawing.Point(613, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 15);
             this.label4.TabIndex = 8;
@@ -389,7 +391,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 510);
+            this.ClientSize = new System.Drawing.Size(774, 510);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtInspect);
             this.Controls.Add(this.label3);

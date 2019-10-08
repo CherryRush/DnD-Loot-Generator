@@ -27,7 +27,7 @@ namespace LootGenerator
         // If the scroll's name matches the input, return true. Otherwise, return false.
         public bool CheckName(string check)
         {
-            if (check == name)
+            if (check == GetName())
                 return true;
             else
                 return false;
@@ -37,9 +37,9 @@ namespace LootGenerator
         public string Inspect()
         {
             // The first line of the inspect output is the name of the scroll.
-            string output = GetName() + "\n";
+            string output = GetName() + "\r\n";
 
-            // The second line of the inspect output is the estimated value of the scroll, which is based on level/rarity.
+            // Estimated value of the scroll, which is based on level/rarity.
             // Values for magic items in D&D 5e are fuzzy and characters are expected to negotiate and haggle.
             // Levels 0, 1: Common (50-100 gp)
             // Levels 2, 3: Uncommon (101-500 gp)
@@ -80,19 +80,19 @@ namespace LootGenerator
                     output += "50,001 gp";
                     break;
             }
-            output += "\n\n";
+            output += "\r\n \r\n";
 
             // The next lines should be the level of the spell and the spell lists it can be cast from.
-            output += "Level: " + level.ToString() + "\n";
+            output += "Level: " + level.ToString() + "\r\n";
             output += "Spell Lists: ";
             foreach (string job in jobs)
             {
                 output += job + ", ";
             }
-            output += "\n\n";
+            output += "\r\n \r\n";
 
             // Finally, add the description of the spell scroll, including its Save DC and Attack Bonus.
-            output += "\tThis spell scroll allows the user to cast " + name + " with a Save DC of ";
+            output += "This spell scroll allows the user to cast " + name + " with a Save DC of ";
             switch (level)
             {
                 case 0:
