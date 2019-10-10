@@ -30,17 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnGenerate = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radParcels = new System.Windows.Forms.RadioButton();
-            this.radHoard = new System.Windows.Forms.RadioButton();
             this.grpHoards = new System.Windows.Forms.GroupBox();
             this.chkHoardManualItems = new System.Windows.Forms.CheckBox();
             this.chkHoardStaticValues = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbHoardCR = new System.Windows.Forms.ComboBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.chkParcelManualItems = new System.Windows.Forms.CheckBox();
-            this.nudParcelLevel = new System.Windows.Forms.NumericUpDown();
             this.grpClasses = new System.Windows.Forms.GroupBox();
             this.chkWizard = new System.Windows.Forms.CheckBox();
             this.chkWarlock = new System.Windows.Forms.CheckBox();
@@ -51,16 +46,14 @@
             this.chkCleric = new System.Windows.Forms.CheckBox();
             this.chkBard = new System.Windows.Forms.CheckBox();
             this.txtInspect = new System.Windows.Forms.TextBox();
-            this.grpParcels = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.lstTreasure = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkXanathar = new System.Windows.Forms.CheckBox();
             this.grpHoards.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudParcelLevel)).BeginInit();
             this.grpClasses.SuspendLayout();
-            this.grpParcels.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGenerate
@@ -74,52 +67,13 @@
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radParcels);
-            this.groupBox1.Controls.Add(this.radHoard);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 69);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mode";
-            // 
-            // radParcels
-            // 
-            this.radParcels.AutoSize = true;
-            this.radParcels.Location = new System.Drawing.Point(6, 42);
-            this.radParcels.Name = "radParcels";
-            this.radParcels.Size = new System.Drawing.Size(105, 17);
-            this.radParcels.TabIndex = 1;
-            this.radParcels.Text = "Treasure Parcels";
-            this.toolTip1.SetToolTip(this.radParcels, "Generate treasure using the Treasure Parcels\r\nmethod. This method is originally f" +
-        "rom D&D\r\n4th Edition, but has been modified for use with\r\n5th Edition.");
-            this.radParcels.UseVisualStyleBackColor = true;
-            this.radParcels.CheckedChanged += new System.EventHandler(this.radParcels_CheckedChanged);
-            // 
-            // radHoard
-            // 
-            this.radHoard.AutoSize = true;
-            this.radHoard.Checked = true;
-            this.radHoard.Location = new System.Drawing.Point(6, 19);
-            this.radHoard.Name = "radHoard";
-            this.radHoard.Size = new System.Drawing.Size(104, 17);
-            this.radHoard.TabIndex = 0;
-            this.radHoard.TabStop = true;
-            this.radHoard.Text = "Treasure Hoards";
-            this.toolTip1.SetToolTip(this.radHoard, "Generate treasure using the Treasure Hoard\r\nmethod. This is the default for D&D 5" +
-        "th Edition.");
-            this.radHoard.UseVisualStyleBackColor = true;
-            this.radHoard.CheckedChanged += new System.EventHandler(this.radHoard_CheckedChanged);
-            // 
             // grpHoards
             // 
             this.grpHoards.Controls.Add(this.chkHoardManualItems);
             this.grpHoards.Controls.Add(this.chkHoardStaticValues);
             this.grpHoards.Controls.Add(this.label1);
             this.grpHoards.Controls.Add(this.cmbHoardCR);
-            this.grpHoards.Location = new System.Drawing.Point(12, 87);
+            this.grpHoards.Location = new System.Drawing.Point(12, 13);
             this.grpHoards.Name = "grpHoards";
             this.grpHoards.Size = new System.Drawing.Size(175, 150);
             this.grpHoards.TabIndex = 2;
@@ -180,43 +134,6 @@
         "ntrolling\r\nthe hoard. If there are multiple CRs of monster,\r\nuse the highest-CR " +
         "monster in the dungeon.");
             // 
-            // chkParcelManualItems
-            // 
-            this.chkParcelManualItems.AutoSize = true;
-            this.chkParcelManualItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkParcelManualItems.Location = new System.Drawing.Point(6, 111);
-            this.chkParcelManualItems.Name = "chkParcelManualItems";
-            this.chkParcelManualItems.Size = new System.Drawing.Size(163, 19);
-            this.chkParcelManualItems.TabIndex = 3;
-            this.chkParcelManualItems.Text = "No Random Magic Items";
-            this.toolTip1.SetToolTip(this.chkParcelManualItems, "When this is checked, the program will not\r\ngenerate random magic items from tabl" +
-        "es\r\nF, G, H, or I. Instead, it will return placeholders\r\nsuch as \"Uncommon Magic" +
-        " Item\".");
-            this.chkParcelManualItems.UseVisualStyleBackColor = true;
-            // 
-            // nudParcelLevel
-            // 
-            this.nudParcelLevel.Location = new System.Drawing.Point(9, 41);
-            this.nudParcelLevel.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudParcelLevel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudParcelLevel.Name = "nudParcelLevel";
-            this.nudParcelLevel.Size = new System.Drawing.Size(120, 20);
-            this.nudParcelLevel.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.nudParcelLevel, "The level of the player party.");
-            this.nudParcelLevel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // grpClasses
             // 
             this.grpClasses.Controls.Add(this.chkWizard);
@@ -227,7 +144,7 @@
             this.grpClasses.Controls.Add(this.chkDruid);
             this.grpClasses.Controls.Add(this.chkCleric);
             this.grpClasses.Controls.Add(this.chkBard);
-            this.grpClasses.Location = new System.Drawing.Point(12, 243);
+            this.grpClasses.Location = new System.Drawing.Point(12, 169);
             this.grpClasses.Name = "grpClasses";
             this.grpClasses.Size = new System.Drawing.Size(175, 224);
             this.grpClasses.TabIndex = 4;
@@ -334,29 +251,6 @@
             this.txtInspect.TabIndex = 7;
             this.toolTip1.SetToolTip(this.txtInspect, "Select items in the Treasure List, and their descriptions\r\nwill appear here.");
             // 
-            // grpParcels
-            // 
-            this.grpParcels.Controls.Add(this.nudParcelLevel);
-            this.grpParcels.Controls.Add(this.chkParcelManualItems);
-            this.grpParcels.Controls.Add(this.label2);
-            this.grpParcels.Enabled = false;
-            this.grpParcels.Location = new System.Drawing.Point(12, 87);
-            this.grpParcels.Name = "grpParcels";
-            this.grpParcels.Size = new System.Drawing.Size(175, 150);
-            this.grpParcels.TabIndex = 3;
-            this.grpParcels.TabStop = false;
-            this.grpParcels.Text = "Parcel Settings";
-            this.grpParcels.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Party Level (Required)";
-            // 
             // lstTreasure
             // 
             this.lstTreasure.FormattingEnabled = true;
@@ -387,31 +281,51 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Item Inspect";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chkXanathar);
+            this.groupBox1.Enabled = false;
+            this.groupBox1.Location = new System.Drawing.Point(12, 399);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(175, 68);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Expansions";
+            this.groupBox1.Visible = false;
+            // 
+            // chkXanathar
+            // 
+            this.chkXanathar.AutoSize = true;
+            this.chkXanathar.Location = new System.Drawing.Point(6, 19);
+            this.chkXanathar.Name = "chkXanathar";
+            this.chkXanathar.Size = new System.Drawing.Size(107, 17);
+            this.chkXanathar.TabIndex = 0;
+            this.chkXanathar.Text = "Xanathar\'s Guide";
+            this.toolTip1.SetToolTip(this.chkXanathar, "When this is checked, the program will use content\r\nfrom Xanathar\'s Guide to Ever" +
+        "ything.");
+            this.chkXanathar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 510);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtInspect);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstTreasure);
             this.Controls.Add(this.grpClasses);
-            this.Controls.Add(this.grpParcels);
             this.Controls.Add(this.grpHoards);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnGenerate);
             this.Name = "Form1";
             this.Text = "Dungeons & Dragons Treasure Generator (5e)";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.grpHoards.ResumeLayout(false);
             this.grpHoards.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudParcelLevel)).EndInit();
             this.grpClasses.ResumeLayout(false);
             this.grpClasses.PerformLayout();
-            this.grpParcels.ResumeLayout(false);
-            this.grpParcels.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,19 +334,12 @@
         #endregion
 
         private System.Windows.Forms.Button btnGenerate;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radParcels;
-        private System.Windows.Forms.RadioButton radHoard;
         private System.Windows.Forms.GroupBox grpHoards;
         private System.Windows.Forms.ComboBox cmbHoardCR;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.CheckBox chkHoardManualItems;
         private System.Windows.Forms.CheckBox chkHoardStaticValues;
-        private System.Windows.Forms.GroupBox grpParcels;
-        private System.Windows.Forms.NumericUpDown nudParcelLevel;
-        private System.Windows.Forms.CheckBox chkParcelManualItems;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpClasses;
         private System.Windows.Forms.CheckBox chkWizard;
         private System.Windows.Forms.CheckBox chkWarlock;
@@ -446,6 +353,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtInspect;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox chkXanathar;
     }
 }
 

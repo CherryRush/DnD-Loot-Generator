@@ -14,6 +14,7 @@ namespace LootGenerator
         private string name;  // The name of the spell on the scroll.
         private int level;  // The level of the spell on the scroll.
         private List<string> jobs;  // The character classes who can use this scroll. (Not counting rogues using Use Magic Device)
+        private bool FromXanathar;  // Whether the scroll is from Xanathar's Guide to Everything.
 
 
         // Methods
@@ -161,6 +162,8 @@ namespace LootGenerator
                     break;
             }
             output += ". After this scroll is used, it will crumble to dust even if the spell cast was unsuccessful.";
+            if (FromXanathar)
+                output += "\r\n \r\nThis spell can be found in Xanathar's Guide to Everything.";
             return output;
         }
 
@@ -180,11 +183,12 @@ namespace LootGenerator
 
         // Constructor
 
-        public Scroll(string name, int level, List<string> jobs)
+        public Scroll(string name, int level, List<string> jobs, bool FromXanathar = false)
         {
             this.name = name;
             this.level = level;
             this.jobs = jobs;
+            this.FromXanathar = FromXanathar;
         }
     }
 }

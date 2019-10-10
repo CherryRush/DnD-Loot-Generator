@@ -26,6 +26,7 @@ namespace LootGenerator
         // This method adds all spell scrolls from the Player's Handbook.
         private void standardScrollList()
         {
+            // Spells beginning with 'A'.
             ScrollIndex.Add(new Scroll("Acid Splash", 0, new List<string> {"Sorcerer", "Wizard"}));
             ScrollIndex.Add(new Scroll("Aid", 2, new List<string> { "Cleric", "Paladin" }));
             ScrollIndex.Add(new Scroll("Alarm", 1, new List<string> {"Ranger", "Wizard"}));
@@ -50,6 +51,8 @@ namespace LootGenerator
             ScrollIndex.Add(new Scroll("Aura of Purity", 4, new List<string> { "Paladin" }));
             ScrollIndex.Add(new Scroll("Aura of Vitality", 3, new List<string> { "Paladin" }));
             ScrollIndex.Add(new Scroll("Awaken", 5, new List<string> { "Bard", "Druid" }));
+
+            // Spells beginning with 'B'.
             ScrollIndex.Add(new Scroll("Bane", 1, new List<string> { "Bard", "Cleric"}));
             ScrollIndex.Add(new Scroll("Banishing Smite", 5, new List<string> { "Paladin" }));
             ScrollIndex.Add(new Scroll("Banishment", 4, new List<string> { "Cleric", "Sorcerer", "Wizard", "Warlock" }));
@@ -68,6 +71,8 @@ namespace LootGenerator
             ScrollIndex.Add(new Scroll("Blur", 2, new List<string> { "Sorcerer", "Wizard" }));
             ScrollIndex.Add(new Scroll("Branding Smite", 2, new List<string> { "Paladin" }));
             ScrollIndex.Add(new Scroll("Burning Hands", 1, new List<string> { "Sorcerer", "Wizard" }));
+
+            // Spells beginning with 'C'.
             ScrollIndex.Add(new Scroll("Call Lightning", 3, new List<string> { "Druid" }));
             ScrollIndex.Add(new Scroll("Calm Emotions", 2, new List<string> { "Bard", "Cleric" }));
             ScrollIndex.Add(new Scroll("Chain Lightning", 6, new List<string> { "Wizard", "Sorcerer" }));
@@ -112,6 +117,8 @@ namespace LootGenerator
             ScrollIndex.Add(new Scroll("Crown of Madness", 2, new List<string> { "Bard", "Sorcerer", "Warlock", "Wizard" }));
             ScrollIndex.Add(new Scroll("Crusader's Mantle", 3, new List<string> { "Paladin" }));
             ScrollIndex.Add(new Scroll("Cure Wounds", 7, new List<string> { "Cleric", "Bard", "Druid", "Paladin", "Ranger" }));
+
+            // Spells beginning with 'D'.
             ScrollIndex.Add(new Scroll("Dancing Lights", 0, new List<string> { "Bard", "Sorcerer", "Wizard" }));
             ScrollIndex.Add(new Scroll("Darkness", 2, new List<string> { "Sorcerer", "Warlock", "Wizard"}));
             ScrollIndex.Add(new Scroll("Darkvision", 2, new List<string> { "Darkvision", "Ranger", "Sorcerer", "Wizard" }));
@@ -141,6 +148,8 @@ namespace LootGenerator
             ScrollIndex.Add(new Scroll("Drawmij's Instant Summons", 6, new List<string> { "Wizard" }));
             ScrollIndex.Add(new Scroll("Dream", 5, new List<string> {"Bard", "Warlock", "Wizard"}));
             ScrollIndex.Add(new Scroll("Druidcraft", 0, new List<string> {"Druid"}));
+
+            // Spells beginning with 'E'.
             ScrollIndex.Add(new Scroll("Earthquake", 8, new List<string> {"Cleric", "Druid", "Sorcerer"}));
             ScrollIndex.Add(new Scroll("Eldritch Blast", 0, new List<string> {"Warlock"}));
             ScrollIndex.Add(new Scroll("Elemental Weapon", 3, new List<string> {"Paladin"}));
@@ -153,6 +162,107 @@ namespace LootGenerator
             ScrollIndex.Add(new Scroll("Evard's Black Tentacles", 4, new List<string> {"Wizard"}));
             ScrollIndex.Add(new Scroll("Expeditious Retreat", 1, new List<string> {"Sorcerer", "Warlock", "Wizard"}));
             ScrollIndex.Add(new Scroll("Eyebite", 6, new List<string> {"Bard", "Sorcerer", "Warlock", "Wizard"}));
+
+            // Spells beginning with 'F'.
+            ScrollIndex.Add(new Scroll("Fabricate", 4, new List<string> { "Wizard" }));
+            ScrollIndex.Add(new Scroll("Faerie Fire", 1, new List<string> {"Bard", "Druid"}));
+            ScrollIndex.Add(new Scroll("False Life", 1, new List<string> {"Sorcerer", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Fear", 3, new List<string> {"Bard", "Sorcerer", "Warlock", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Feather Fall", 1, new List<string> {"Bard", "Sorcerer", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Feeblemind", 8, new List<string> {"Bard", "Druid", "Warlock", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Feign Death", 3, new List<string> {"Bard", "Cleric", "Druid", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Find Familiar", 1, new List<string> { "Wizard" }));
+            ScrollIndex.Add(new Scroll("Find Steed", 2, new List<string> { "Paladin" }));
+            ScrollIndex.Add(new Scroll("Find Traps", 2, new List<string> {"Cleric", "Druid", "Ranger"}));
+            ScrollIndex.Add(new Scroll("Find the Path", 6, new List<string> { "Bard", "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Finger of Death", 7, new List<string> { "Sorcerer", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Fireball", 3, new List<string> { "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Fire Bolt", 0, new List<string> { "Sorcerer", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Fire Shield", 4, new List<string> { "Wizard" }));
+            ScrollIndex.Add(new Scroll("Fire Storm", 7, new List<string> { "Cleric", "Druid", "Sorcerer"}));
+            ScrollIndex.Add(new Scroll("Flame Blade", 2, new List<string> { "Druid"}));
+            ScrollIndex.Add(new Scroll("Flame Strike", 5, new List<string> {"Cleric"}));
+            ScrollIndex.Add(new Scroll("Flaming Sphere", 2, new List<string> {"Druid", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Flesh to Stone", 6, new List<string> { "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Fly", 3, new List<string> { "Sorcerer", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Fog Cloud", 1, new List<string> { "Druid", "Ranger", "Sorcerer", "Wizard"}));
+            ScrollIndex.Add(new Scroll("Forbiddance", 6, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Forcecage", 7, new List<string> { "Bard", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Foresight", 9, new List<string> { "Bard", "Druid", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Freedom of Movement", 4, new List<string> { "Bard", "Cleric", "Druid", "Ranger" }));
+            ScrollIndex.Add(new Scroll("Friends", 0, new List<string> { "Bard", "Sorcerer", "Warlock", "Wizard" }));
+
+            // Spells beginning with 'G'.
+            ScrollIndex.Add(new Scroll("Gaseous Form", 3, new List<string> { "Sorcerer", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Gate", 9, new List<string> { "Cleric", "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Geas", 5, new List<string> { "Bard", "Cleric", "Druid", "Paladin", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Gentle Repose", 2, new List<string> { "Cleric", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Giant Insect", 4, new List<string> { "Druid" }));
+            ScrollIndex.Add(new Scroll("Glibness", 8, new List<string> { "Bard" }));
+            ScrollIndex.Add(new Scroll("Globe of Invulnerability", 6, new List<string> { "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Glyph of Warding", 3, new List<string> { "Bard", "Cleric", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Goodberry", 1, new List<string> { "Druid", "Ranger" }));
+            ScrollIndex.Add(new Scroll("Grasping Vine", 4, new List<string> { "Druid", "Ranger" }));
+            ScrollIndex.Add(new Scroll("Grease", 1, new List<string> { "Wizard" }));
+            ScrollIndex.Add(new Scroll("Greater Invisibility", 4, new List<string> { "Bard", "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Greater Restoration", 5, new List<string> { "Bard", "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Guardian of Faith", 4, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Guards and Wards", 6, new List<string> { "Bard", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Guidance", 0, new List<string> { "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Guiding Bolt", 1, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Gust of Wind", 2, new List<string> { "Druid", "Sorcerer", "Wizard" }));
+
+            // Spells beginning with 'H'.
+            ScrollIndex.Add(new Scroll("Hail of Thorns", 1, new List<string> { "Ranger" }));
+            ScrollIndex.Add(new Scroll("Hallow", 5, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Hallucinatory Terrain", 4, new List<string> { "Bard", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Harm", 6, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Haste", 3, new List<string> { "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Heal", 6, new List<string> { "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Healing Word", 1, new List<string> { "Bard", "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Heat Metal", 2, new List<string> { "Bard", "Druid" }));
+            ScrollIndex.Add(new Scroll("Hellish Rebuke", 1, new List<string> { "Warlock" }));
+            ScrollIndex.Add(new Scroll("Heroes' Feast", 6, new List<string> { "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Heroism", 1, new List<string> { "Bard", "Paladin" }));
+            ScrollIndex.Add(new Scroll("Hex", 1, new List<string> { "Warlock" }));
+            ScrollIndex.Add(new Scroll("Hold Monster", 5, new List<string> { "Bard", "Sorcerer", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Hold Person", 2, new List<string> { "Bard", "Cleric", "Druid", "Sorcerer",
+                                                                            "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Holy Aura", 8, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Hunger of Hadar", 3, new List<string> { "Warlock" }));
+            ScrollIndex.Add(new Scroll("Hunter's Mark", 1, new List<string> { "Ranger" }));
+            ScrollIndex.Add(new Scroll("Hypnotic Pattern", 3, new List<string> { "Bard", "Sorcerer", "Warlock", "Wizard" }));
+
+            // Spells beginning with 'I'.
+            ScrollIndex.Add(new Scroll("Ice Storm", 4, new List<string> { "Druid", "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Identify", 1, new List<string> { "Bard", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Illusory Script", 1, new List<string> { "Bard", "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Imprisonment", 9, new List<string> { "Warlock", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Incendiary Cloud", 8, new List<string> { "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Inflict Wounds", 1, new List<string> { "Cleric" }));
+            ScrollIndex.Add(new Scroll("Insect Plague", 5, new List<string> { "Cleric", "Druid" }));
+            ScrollIndex.Add(new Scroll("Invisibility", 2, new List<string> { "Bard", "Sorcerer", "Warlock", "Wizard" }));
+
+            // Spells beginning with 'J'.
+            ScrollIndex.Add(new Scroll("Jump", 1, new List<string> { "Druid", "Ranger", "Sorcerer", "Wizard" }));
+
+            // Spells beginning with 'K'.
+            ScrollIndex.Add(new Scroll("Knock", 2, new List<string> { "Bard", "Sorcerer", "Wizard" }));
+
+            // Spells beginning with 'L'.
+            ScrollIndex.Add(new Scroll("Legend Lore", 5, new List<string> { "Bard", "Cleric", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Leomund's Secret Chest", 4, new List<string> { "Wizard" }));
+            ScrollIndex.Add(new Scroll("Leomund's Tiny Hut", 3, new List<string> { "Wizard", "Bard" }));
+            ScrollIndex.Add(new Scroll("Lesser Restoration", 2, new List<string> { "Bard", "Cleric", "Druid", "Paladin", "Ranger" }));
+            ScrollIndex.Add(new Scroll("Levitate", 2, new List<string> { "Paladin", "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Light", 0, new List<string> { "Bard", "Cleric", "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Lightning Arrow", 3, new List<string> { "Ranger" }));
+            ScrollIndex.Add(new Scroll("Lightning Bolt", 3, new List<string> { "Sorcerer", "Wizard" }));
+            ScrollIndex.Add(new Scroll("Locate Animals or Plants", 2, new List<string> { "Bard", "Druid", "Ranger" }));
+            ScrollIndex.Add(new Scroll("Locate Creature", 4, new List<string> { "Bard", "Cleric", "Druid", "Paladin", "Ranger",
+                                                                                "Wizard" }));
+            ScrollIndex.Add(new Scroll("Locate Object", 2, new List<string> { "Bard", "Cleric", "Druid", "Paladin", "Ranger" }));
+            ScrollIndex.Add(new Scroll("Longstrider", 1, new List<string> { "Bard", "Druid", "Ranger", "Wizard" }));
         }
 
         // A list of all gemstones and art objects available to the loot generator.
@@ -270,32 +380,6 @@ namespace LootGenerator
             lstTreasure.DataSource = itemOutput;
         }
 
-        // When radHoard is checked, disable/hide the Parcels group box and
-        // enable/show the Hoards group box.
-        private void radHoard_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radHoard.Checked == true)
-            {
-                grpParcels.Enabled = false;
-                grpParcels.Visible = false;
-                grpHoards.Visible = true;
-                grpHoards.Enabled = true;
-            }
-        }
-
-        // When radParcels is checked, disable/hide the Hoards group box and
-        // enable/show the Parcels group box.
-        private void radParcels_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radParcels.Checked == true)
-            {
-                grpHoards.Enabled = false;
-                grpHoards.Visible = false;
-                grpParcels.Visible = true;
-                grpParcels.Enabled = true;
-            }
-        }
-
         // Treasure Generation
         private void btnGenerate_Click(object sender, EventArgs e)
         {
@@ -306,20 +390,9 @@ namespace LootGenerator
             bool manualitems;  // If true, use placeholder strings for permanent/major magic items.
             Random die = new Random();  // A Random object to roll on tables.
 
-            // If radHoards is checked, generate a random treasure hoard.
-            if (radHoard.Checked == true)
-            {
-                level = cmbHoardCR.SelectedIndex;
-                staticvalues = chkHoardStaticValues.Checked;
-                manualitems = chkHoardManualItems.Checked;
-            }
-            // If radParcels is checked, generate a random treasure parcel.
-            else
-            {
-                level = Convert.ToInt32(nudParcelLevel.Value);
-                staticvalues = false;
-                manualitems = chkParcelManualItems.Checked;
-            }
+            level = cmbHoardCR.SelectedIndex;
+            staticvalues = chkHoardStaticValues.Checked;
+            manualitems = chkHoardManualItems.Checked;
         }
 
         // When a member of lstTreasure is selected, search the item lists for that item, and then
